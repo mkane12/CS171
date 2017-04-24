@@ -1,0 +1,54 @@
+#label {
+    font-family: Palatino;
+    text-anchor: center;
+}
+
+path {
+    stroke: #824106;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #333;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+
+.area {
+    fill: #c09653;
+}
+
+.bar-label {
+    font-family: Palatino;
+    color: #4d418b;
+    font-size: 11px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-family: Palatino;
+    color: #4d418b;
+}
+
+h2 {
+    text-align: center;
+    font-family: Palatino;
+    color: #4d418b;
+    text-decoration: underline;
+}
+
+body {
+    background-color: #efe3cb;
+}
+
+.x-label {
+    text-anchor: right;
+}

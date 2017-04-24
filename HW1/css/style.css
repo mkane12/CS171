@@ -1,0 +1,59 @@
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: darkred;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+}
+
+body {
+    font-family: "sans-serif";
+    background-color: white;
+    color: black;
+    margin: 4cm;
+}
+
+.sortable {
+    background-color: lightgray;
+    border: 1px solid black;
+    font-size: 20px;
+    margin-bottom: 3cm;
+}
+
+.row {
+    margin-bottom: 1cm;
+}
+
+th {
+    font-size: 20px;
+    text-align: center;
+    background-color: lightcyan;
+}
+
+/* add table border */
+tr {
+    border: 1px solid black;
+}
+
+/* alternate row color */
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+.col-sm-6 {
+    font-size: 15px;
+}
+
+.carousel-caption {
+    background-color: white;
+    color: black;
+    opacity: 0.8;
+    font-size: 30px;
+}
+
+#carousel1 {
+    margin: 0 auto;
+}

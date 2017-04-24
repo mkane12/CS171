@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CS171 - Midterm</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/colorbrewer.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- Image Carousel -->
+	<div class="carousel slide" id="carousel" data-ride="carousel" style="text-align: center">
+		<ol class="carousel-indicators">
+			<li data-target="#carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel" data-slide-to="1" class=""></li>
+			<li data-target="#carousel" data-slide-to="2" class=""></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<center><img src="img/africa_students.jpg" height="400" width="800"></center>
+				<div class="carousel-caption" width="800">
+					<p>“When students are freed from gathering water, they return to class.</p>
+					<p>With proper and safe latrines, girls stay in school through their teenage years.”</p>
+				</div>
+			</div>
+			<div class="item">
+				<center><img src="img/africa_crops.jpg" height="400" width="800"></center>
+				<div class="carousel-caption" width="800">
+					<p>“Access to water leads to food security. With less crop loss, hunger is reduced.</p>
+					<p>Schools can feed students with gardens, reducing costs.”</p>
+				</div>
+			</div>
+			<div class="item">
+				<center><img src="img/africa-kids.jpg" height="400" width="800"></center>
+				<div class="carousel-caption" width="800">
+					<p>“Safe water, clean hands, healthy bodies. Time lost to sickness is reduced and people can get</p>
+					<p>back to the work of lifting themselves out of poverty.”</p>
+				</div>
+			</div>
+		</div>
+		<a href="#carousel1" class="left carousel-control" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a href="#carousel1" class="right carousel-control" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+	<h1>Water: A Human Right</h1>
+
+	<h2>Clean Water and Sanitation</h2>
+	<p>Clean, accessible water for all is an essential part of the world we want to live in. There is sufficient fresh
+		water on the planet to achieve this. But due to bad economics or poor infrastructure, every year millions of
+		people, most of them children, die from diseases associated with inadequate water supply, sanitation and
+		hygiene. Water scarcity, poor water quality and inadequate sanitation negatively impact food security,
+		livelihood choices and educational opportunities for poor families across the world. Drought afflicts some of
+		the world’s poorest countries, worsening hunger and malnutrition.</p>
+
+	<div class="row">
+		<div class="col-md-6">
+			<h2>See Data in Africa for:</h2>
+			<!-- Choropleth Category Selector -->
+			<div class="user-control" onchange="dataManipulation()">
+				<select id="type" class="form-control">
+					<option value="UN_Population">UN Population</option>
+					<option value="Improved_Water_2015">Improved drinking-water sources (% of population)</option>
+					<option value="Improved_Sanitation_2015">Improved sanitation facilities (% of population)</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="col-md-5">
+			<h2>Hierarchy of Water Requirements</h2>
+		</div>
+
+	</div>
+
+	<div class="row">
+		<!-- Choropleth -->
+		<div class="col-md-6">
+			<div id="map-area"></div>
+		</div>
+
+
+		<!-- Second Vis -->
+		<div class="col-md-5">
+			<div id="sec-vis-area"></div>
+		</div>
+
+	</div>
+
+	<div class="row">
+		<div class="col-md-6" id="africa-desc">
+			<h3>Poverty and Water</h3>
+			<p>"Poverty in Africa is often caused by a lack of access to clean, safe water and proper sanitation."
+				(The Water Project)</p>
+			<p>There are a number of reasons why poverty has become an epidemic in Africa. Poverty can be the result of
+				political instability, ethnic conflicts, climate change and other man-made causes. But one of the
+				greatest causes of poverty in Africa is also the most overlooked... the lack of access to clean drinking
+				water.</p>
+		</div>
+
+		<div class="col-md-6" id="water-req">
+			<h3>How much water is needed?</h3>
+			<p>Water is essential for life, health and human dignity. In extreme emergency situations, there may not be
+				sufficient water available to meet basic needs and in these cases, supplying a minimum level of safe
+				drinking-water for survival is of critical importance. People use water for a wide variety of
+				activities. Some of these are more important than others. Having a few litres of water to drink each
+				day, for example, is more important than having water for personal hygiene or laundry, but people will
+				still want and need to wash for the prevention of skin diseases and meeting other physiological needs.
+				Other uses of water have health and other benefits but decrease in urgency.</p>
+		</div>
+	</div>
+
+	<h2>What Can We Do?</h2>
+	<p>Civil society organizations should work to keep governments accountable, invest in water research and
+		development, and promote the inclusion of women, youth and indigenous communities in water resources governance.
+		Generating awareness of these roles and turning them into action will lead to win-win results and increased
+		sustainability and integrity for both human and ecological systems.</p>
+
+	<!-- Load JS libraries -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/queue.min.js"></script>
+	<script src="js/topojson.js"></script>
+	<script src="js/d3.min.js"></script>
+	<script src="js/colorbrewer.min.js"></script>
+
+	<!-- Choropleth and second visualization -->
+	<script src="js/vis-choropleth.js"></script>
+	<script src="js/vis-second.js"></script>
+	
+</body>
+</html>

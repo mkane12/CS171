@@ -1,0 +1,76 @@
+
+#carousel {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    background-color: #2aabd2;
+    color: white;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    margin-right: 150px;
+    margin-left: 80px;
+}
+
+
+.form-control {
+    text-align: center;
+}
+
+#countries path {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1.5px;
+}
+
+body {
+    background-color: #e6faff;
+    font-family: Palatino;
+}
+
+.path {
+    stroke-width: 2px;
+}
+
+#legend {
+    padding: 1.5em 0 0 1.5em;
+}
+
+li.key {
+    border-top-width: 15px;
+    border-top-style: solid;
+    font-size: .75em;
+    width: 10%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.legendEntry {
+    background-color: #adadad;
+}
+
+.node circle {
+    fill: #17b2ff;
+    stroke: black;
+    stroke-width: 3px;
+}
+
+.node text { font: 12px Palatino; }
+
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+}

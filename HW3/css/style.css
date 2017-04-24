@@ -1,0 +1,38 @@
+/* ************ ADD YOUR CUSTOM STYLES ************ */
+
+body {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.bar-label {
+    text-anchor: end;
+}
+
+.height-label {
+    text-anchor: left;
+}
+
+.bar-label {
+    font-size: 15px;
+}
+
+#building-name {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#pic {
+    text-align: center;
+}
+
+.info {
+    text-align: left;
+    font-size: 15px;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+    color: rebeccapurple;
+}

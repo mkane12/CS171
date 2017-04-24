@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CS171 - HW 5</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="container">
+
+		<h1>FIFA World Cup<sup>TM</sup></h1>
+
+				<h2>All Time Statistics</h2>
+
+				<!-- Select box to choose y-axis -->
+				<form class="form-inline">
+					<div class="form-group">
+						<label for="category">Category</label>
+						<select class="form-control" id="category" onchange="dataManipulation()">
+							<option value="GOALS">Number of Goals</option>
+							<option value="AVERAGE_GOALS">Average Number of Goals</option>
+							<option value="MATCHES">Number of Matches</option>
+							<option value="TEAMS">Number of Teams</option>
+							<option value="AVERAGE_ATTENDANCE">Average Attendance</option>
+						</select>
+					</div>
+				</form>
+
+				<form>
+					Start Date: <input type="text" name="startDate"><br>
+					End Date: <input type="text" name="endDate"><br>
+					<input type="button" name="filter" value="Filter" onclick="dateChange(document.getElementsByName('startDate')[0].value, document.getElementsByName('endDate')[0].value)">
+				</form>
+			</div>
+
+		<div class="row">
+
+			<!-- line graph -->
+			<div class="col-md-8">
+				<!-- Parent container for the visualization -->
+				<div id="chart-area"></div>
+			</div>
+			<!-- space for point specifics -->
+			<div class="col-md-4" id="point-specifics">
+				<div id="edition"></div>
+				<div id="location"></div>
+				<div id="winner"></div>
+				<div id="num-goals"></div>
+				<div id="avg-num-goals"></div>
+				<div id="num-matches"></div>
+				<div id="num-teams"></div>
+				<div id="avg-attend"></div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+
+	<!-- Load JS libraries: jQuery, bootstrap, D3, D3 tooltip -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/d3.min.js"></script>
+	<script src="js/d3.tip.js"></script>
+
+	<!-- Your implementation -->
+	<script src="js/main.js"></script>
+</body>
+</html>
